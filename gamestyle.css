@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-align: center;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    background-color: rgb(2, 5, 42);
+    color: white;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+.choices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12rem;
+    gap: 5rem;
+}
+.choice{
+    /* font-size: 5rem; */
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choice:hover{
+    background-color: black;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: rotate(270deg);
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 8rem;
+}
+.userscorediv, .comscorediv{
+    font-size: 3rem;
+}
+#user-score , #com-score{
+    font-size: 5rem;
+}
+#output{
+    display: inline-block;
+    margin: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(2, 5, 42);
+    color: white;
+    font-size: 3rem;
+}
+
+@media (width <= 670px){
+    html{
+        font-size: 52.5%;
+    }
+    .choice{
+        height: 130px;
+        width: 130px;
+    }
+    img{
+        height: 120px;
+        width: 120px;
+    }
+}
+@media (width <= 500px){
+    html{
+        font-size: 40.5%;
+    }
+    .choice{
+        height: 100px;
+        width: 100px;
+    }
+    img{
+        height: 90px;
+        width: 90px;
+    }
+}
+@media (width <= 400px){
+    html{
+        font-size: 42.5%;
+    }
+    .choice{
+        height: 80px;
+        width: 80px;
+    }
+    img{
+        height: 70px;
+        width: 70px;
+    }
+}
+@media (width <= 350px){
+    html{
+        font-size: 37%;
+    }
+    .choice{
+        height: 80px;
+        width: 80px;
+    }
+    img{
+        height: 70px;
+        width: 70px;
+    }
+}
+@media (width <= 300px){
+    html{
+        font-size: 33%;
+    }
+    .choice{
+        height: 70px;
+        width: 70px;
+    }
+    img{
+        height: 60px;
+        width: 60px;
+    }
+}
